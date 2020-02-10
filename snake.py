@@ -11,12 +11,18 @@ import time
 
 # class Food():
 #      def __init__(self):
-       
 
-canvas = pygame.display.set_mode((700, 400))
+dimensions = (700, 400)
+black = [0, 0, 0]
+white = [255, 255, 255]
 
-# FPS controller
-fpsController = pygame.time.Clock()
+pygame.init()
+canvas = pygame.display.set_mode(dimensions)
+canvas.fill(white)
+pygame.display.set_caption('Snake Game')
+pygame.display.flip()
+
+
 
 if __name__ == '__main__':
     while True:
@@ -25,4 +31,3 @@ if __name__ == '__main__':
                 pygame.quit()
                 sys.exit()
         
-
